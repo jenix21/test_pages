@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <script>
-var text = document.createTextNode(window.opener ? "opener exists" : "no opener");
-var result = document.createElement('div');
-result.appendChild(text);
+window.onload = function() {
+  var text = document.createTextNode(window.opener ? "opener exists" : "no opener");
+  var result = document.createElement('div');
+  result.appendChild(text);
 
-document.body.appendChild(result);
+  document.body.appendChild(result);
+}
 </script>
 <html>
 <body>
-
+opener check
 </body>
 </html>
 
