@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <script>
+var text = document.createTextNode(window.opener ? "opener exists" : "no opener");
+var result = document.createElement('div');
+result.appendChild(text);
 
+document.body.appendChild(result);
 </script>
 <html>
 <body>
